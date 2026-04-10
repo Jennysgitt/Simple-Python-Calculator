@@ -1,3 +1,1 @@
-from .calculator import Calculator
-
-__all__ = ["Calculator"]
+from .calculator import Calculator  # noqa: F401

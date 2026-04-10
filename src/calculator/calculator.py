@@ -3,7 +3,7 @@ import math
 
 class Calculator:
 
-    """Calculator class with methods to sum, subtract, 
+    """Calculator class with methods to sum, subtract,
     multiply, divide square and find square root"""
 
     def __init__(self, memory=0):
