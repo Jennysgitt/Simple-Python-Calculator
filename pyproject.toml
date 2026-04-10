@@ -1,0 +1,10 @@
+[project]
+name = "simple-calculator"
+version = "0.1.0"
+description = "A simple Python calculator"
+authors = [{name = "Your Name"}]
+dependencies = []
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
