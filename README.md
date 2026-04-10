@@ -1,6 +1,6 @@
 # Simple Python Calculator
 
-[![CI](https://github.com/Jennysgitt/Simple-Python-Calculator/actions/workflows/ci.yml/badge.svg)](https://github.com/Jennysgitt/Simple-Python-Calculator/actions/workflows/ci.yml)
+[![CI](https://github.com/Jennysgitt/Simple-Python-Calculator/actions/workflows/ci.yml/badge.svg)](https://github.com/Jennysgitt/Simple-Python-Calculator/actions/workflows/ci.yml) ![Documentation](https://img.shields.io/badge/docs-latest-brightgreen)
 
 Calculator currently supports:
   - Addition, subtraction, division and multiplication

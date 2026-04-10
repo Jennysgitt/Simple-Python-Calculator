@@ -20,12 +20,12 @@ class Calculator:
         """
         Returns sum of two numeric values
 
-        Parameters:
-            a (float): The number to add to
-            b (float): The number to be added
+        Args:
+            a (float): The first number
+            b (float): The second number. If None, uses the current memory.
 
         Returns:
-            sum (float): The sum of the provided numbers
+            float: The sum of the provided numbers
         """
 
         try:
@@ -39,14 +39,14 @@ class Calculator:
 
     def subtract(self, a, b=None):
         """
-        Returns subtraction result of two numeric
+        Returns subtraction result of two numeric values.
 
-        Parameters:
+        Args:
             a (float): The number to subtract from
-            b (float): The number to subtract
+            b (float): The number to subtract. If None, uses the current memory.
 
         Returns:
-            subtraction (float): The subtraction of the provided numbers
+            float): The subtraction result.
         """
 
         try:
@@ -64,11 +64,11 @@ class Calculator:
         Returns multiplication result of two numeric values
 
         Parameters:
-            a (float): The number to multiply
-            b (float): The number to multiply by
+            a (float): The first factor.
+            b (float): The second factor. If None, uses the current memory.
 
         Returns:
-            multiplication (float): The multiplication of the provided numbers
+            float: The product of the numbers.
         """
 
         try:
@@ -84,12 +84,12 @@ class Calculator:
         """
         Returns division result of two numeric values
 
-        Parameters:
-            a (float): The number to divide
-            b (float): The number to divide by
+        Args:
+            a (float): The dividend.
+            b (float): The divisor. If None, uses the current memory.
 
         Returns:
-            division (float): The division of the provided numbers
+            float): The quotient
         """
 
         try:
@@ -108,11 +108,11 @@ class Calculator:
         """
         Returns square of provided numeric value
 
-        Parameters:
-            a (float): The number to be squared
+        Args:
+            a (float, optional): The number to be squared. If None, uses the current memory.
 
         Returns:
-            square (float): The square of the provided number
+            float): The square result.
         """
 
         try:
@@ -128,11 +128,11 @@ class Calculator:
         """
         Returns square root of provided numeric value
 
-        Parameters:
-            a (float): The number to find square root of
+        Args:
+            a (float, optional): The number to find square root of. If None, uses the current memory.
 
         Returns:
-            square_root (float): The square root of the provided number
+            float: The square root result.
         """
 
         try:
