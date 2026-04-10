@@ -28,12 +28,12 @@ class Calculator:
         """
 
         try:
-            if b == None:
+            if b is None:
                 b = self.memory
 
             self.memory = float(a) + float(b)
             return self.memory
-        except:
+        except Exception:
             return 'Invalid input'
 
     def subtract(self, a, b=None):
@@ -49,13 +49,13 @@ class Calculator:
         """
 
         try:
-            if b == None:
+            if b is None:
                 b = a
                 a = self.memory
 
             self.memory = float(a) - float(b)
             return self.memory
-        except:
+        except Exception:
             return 'Invalid input'
 
     def multiply(self, a, b=None):
@@ -71,12 +71,12 @@ class Calculator:
         """
 
         try:
-            if b == None:
+            if b is None:
                 b = self.memory
 
             self.memory = float(a) * float(b)
             return self.memory
-        except:
+        except Exception:
             return 'Invalid input'
 
     def divide(self, a, b=None):
@@ -92,7 +92,7 @@ class Calculator:
         """
 
         try:
-            if b == None:
+            if b is None:
                 b = a
                 a = self.memory
 
@@ -100,7 +100,7 @@ class Calculator:
             return self.memory
         except ZeroDivisionError:
             return 'Can not divide by zero.'
-        except:
+        except Exception:
             return 'Invalid input'
 
     def square(self, a=None):
@@ -115,12 +115,12 @@ class Calculator:
         """
 
         try:
-            if a == None:
+            if a is None:
                 a = self.memory
 
             self.memory = float(a) ** 2
             return self.memory
-        except:
+        except Exception:
             return 'Invalid input'
 
     def sqrt(self, a=None):
@@ -135,10 +135,10 @@ class Calculator:
         """
 
         try:
-            if a == None:
+            if a is None:
                 a = self.memory
 
             self.memory = math.sqrt(float(a))
             return self.memory
-        except:
+        except Exception:
             return 'Invalid input'
