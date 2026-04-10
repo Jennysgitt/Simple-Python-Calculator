@@ -510,7 +510,6 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     <div class="doc doc-contents first">
 
 
-
         <p>Calculator class with methods to sum, subtract,
 multiply, divide square and find square root</p>
 
@@ -521,7 +520,7 @@ multiply, divide square and find square root</p>
 
 
 
-              <details class="mkdocstrings-source">
+              <details class="quote">
                 <summary>Source code in <code>src/calculator/calculator.py</code></summary>
                 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">  4</span>
 <span class="normal">  5</span>
@@ -683,12 +682,12 @@ multiply, divide square and find square root</p>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Returns sum of two numeric values</span>
 
-<span class="sd">        Parameters:</span>
-<span class="sd">            a (float): The number to add to</span>
-<span class="sd">            b (float): The number to be added</span>
+<span class="sd">        Args:</span>
+<span class="sd">            a (float): The first number</span>
+<span class="sd">            b (float): The second number. If None, uses the current memory.</span>
 
 <span class="sd">        Returns:</span>
-<span class="sd">            sum (float): The sum of the provided numbers</span>
+<span class="sd">            float: The sum of the provided numbers</span>
 <span class="sd">        &quot;&quot;&quot;</span>
 
         <span class="k">try</span><span class="p">:</span>
@@ -702,14 +701,14 @@ multiply, divide square and find square root</p>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">subtract</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Returns subtraction result of two numeric</span>
+<span class="sd">        Returns subtraction result of two numeric values.</span>
 
-<span class="sd">        Parameters:</span>
+<span class="sd">        Args:</span>
 <span class="sd">            a (float): The number to subtract from</span>
-<span class="sd">            b (float): The number to subtract</span>
+<span class="sd">            b (float): The number to subtract. If None, uses the current memory.</span>
 
 <span class="sd">        Returns:</span>
-<span class="sd">            subtraction (float): The subtraction of the provided numbers</span>
+<span class="sd">            float): The subtraction result.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
 
         <span class="k">try</span><span class="p">:</span>
@@ -727,11 +726,11 @@ multiply, divide square and find square root</p>
 <span class="sd">        Returns multiplication result of two numeric values</span>
 
 <span class="sd">        Parameters:</span>
-<span class="sd">            a (float): The number to multiply</span>
-<span class="sd">            b (float): The number to multiply by</span>
+<span class="sd">            a (float): The first factor.</span>
+<span class="sd">            b (float): The second factor. If None, uses the current memory.</span>
 
 <span class="sd">        Returns:</span>
-<span class="sd">            multiplication (float): The multiplication of the provided numbers</span>
+<span class="sd">            float: The product of the numbers.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
 
         <span class="k">try</span><span class="p">:</span>
@@ -747,12 +746,12 @@ multiply, divide square and find square root</p>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Returns division result of two numeric values</span>
 
-<span class="sd">        Parameters:</span>
-<span class="sd">            a (float): The number to divide</span>
-<span class="sd">            b (float): The number to divide by</span>
+<span class="sd">        Args:</span>
+<span class="sd">            a (float): The dividend.</span>
+<span class="sd">            b (float): The divisor. If None, uses the current memory.</span>
 
 <span class="sd">        Returns:</span>
-<span class="sd">            division (float): The division of the provided numbers</span>
+<span class="sd">            float): The quotient</span>
 <span class="sd">        &quot;&quot;&quot;</span>
 
         <span class="k">try</span><span class="p">:</span>
@@ -771,11 +770,11 @@ multiply, divide square and find square root</p>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Returns square of provided numeric value</span>
 
-<span class="sd">        Parameters:</span>
-<span class="sd">            a (float): The number to be squared</span>
+<span class="sd">        Args:</span>
+<span class="sd">            a (float, optional): The number to be squared. If None, uses the current memory.</span>
 
 <span class="sd">        Returns:</span>
-<span class="sd">            square (float): The square of the provided number</span>
+<span class="sd">            float): The square result.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
 
         <span class="k">try</span><span class="p">:</span>
@@ -791,11 +790,11 @@ multiply, divide square and find square root</p>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Returns square root of provided numeric value</span>
 
-<span class="sd">        Parameters:</span>
-<span class="sd">            a (float): The number to find square root of</span>
+<span class="sd">        Args:</span>
+<span class="sd">            a (float, optional): The number to find square root of. If None, uses the current memory.</span>
 
 <span class="sd">        Returns:</span>
-<span class="sd">            square_root (float): The square root of the provided number</span>
+<span class="sd">            float: The square root result.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
 
         <span class="k">try</span><span class="p">:</span>
@@ -811,7 +810,7 @@ multiply, divide square and find square root</p>
 
 
 
-<div class="doc doc-children">
+  <div class="doc doc-children">
 
 
 
@@ -856,7 +855,7 @@ multiply, divide square and find square root</p>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>The number to divide</p>
+                <p>The dividend.</p>
               </div>
             </td>
             <td>
@@ -872,7 +871,7 @@ multiply, divide square and find square root</p>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>The number to divide by</p>
+                <p>The divisor. If None, uses the current memory.</p>
               </div>
             </td>
             <td>
@@ -887,18 +886,17 @@ multiply, divide square and find square root</p>
     <table>
       <thead>
         <tr>
-<th>Name</th>          <th>Type</th>
+          <th>Type</th>
           <th>Description</th>
         </tr>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-<td><code>division</code></td>            <td>
-                  <code><span title="float">float</span></code>
+            <td>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>The division of the provided numbers</p>
+                <p>float): The quotient</p>
               </div>
             </td>
           </tr>
@@ -906,7 +904,7 @@ multiply, divide square and find square root</p>
     </table>
 
 
-            <details class="mkdocstrings-source">
+            <details class="quote">
               <summary>Source code in <code>src/calculator/calculator.py</code></summary>
               <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 83</span>
 <span class="normal"> 84</span>
@@ -934,12 +932,12 @@ multiply, divide square and find square root</p>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Returns division result of two numeric values</span>
 
-<span class="sd">    Parameters:</span>
-<span class="sd">        a (float): The number to divide</span>
-<span class="sd">        b (float): The number to divide by</span>
+<span class="sd">    Args:</span>
+<span class="sd">        a (float): The dividend.</span>
+<span class="sd">        b (float): The divisor. If None, uses the current memory.</span>
 
 <span class="sd">    Returns:</span>
-<span class="sd">        division (float): The division of the provided numbers</span>
+<span class="sd">        float): The quotient</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="k">try</span><span class="p">:</span>
@@ -993,7 +991,7 @@ multiply, divide square and find square root</p>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>The number to multiply</p>
+                <p>The first factor.</p>
               </div>
             </td>
             <td>
@@ -1009,7 +1007,7 @@ multiply, divide square and find square root</p>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>The number to multiply by</p>
+                <p>The second factor. If None, uses the current memory.</p>
               </div>
             </td>
             <td>
@@ -1030,12 +1028,11 @@ multiply, divide square and find square root</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-<td><code>multiplication</code></td>            <td>
-                  <code><span title="float">float</span></code>
+<td><code>float</code></td>            <td>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>The multiplication of the provided numbers</p>
+                <p>The product of the numbers.</p>
               </div>
             </td>
           </tr>
@@ -1043,7 +1040,7 @@ multiply, divide square and find square root</p>
     </table>
 
 
-            <details class="mkdocstrings-source">
+            <details class="quote">
               <summary>Source code in <code>src/calculator/calculator.py</code></summary>
               <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">62</span>
 <span class="normal">63</span>
@@ -1069,11 +1066,11 @@ multiply, divide square and find square root</p>
 <span class="sd">    Returns multiplication result of two numeric values</span>
 
 <span class="sd">    Parameters:</span>
-<span class="sd">        a (float): The number to multiply</span>
-<span class="sd">        b (float): The number to multiply by</span>
+<span class="sd">        a (float): The first factor.</span>
+<span class="sd">        b (float): The second factor. If None, uses the current memory.</span>
 
 <span class="sd">    Returns:</span>
-<span class="sd">        multiplication (float): The multiplication of the provided numbers</span>
+<span class="sd">        float: The product of the numbers.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="k">try</span><span class="p">:</span>
@@ -1104,7 +1101,7 @@ multiply, divide square and find square root</p>
         <p>Resets the memory back to zero</p>
 
 
-            <details class="mkdocstrings-source">
+            <details class="quote">
               <summary>Source code in <code>src/calculator/calculator.py</code></summary>
               <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">12</span>
 <span class="normal">13</span>
@@ -1157,7 +1154,7 @@ multiply, divide square and find square root</p>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>The number to find square root of</p>
+                <p>The number to find square root of. If None, uses the current memory.</p>
               </div>
             </td>
             <td>
@@ -1178,12 +1175,11 @@ multiply, divide square and find square root</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-<td><code>square_root</code></td>            <td>
-                  <code><span title="float">float</span></code>
+<td><code>float</code></td>            <td>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>The square root of the provided number</p>
+                <p>The square root result.</p>
               </div>
             </td>
           </tr>
@@ -1191,7 +1187,7 @@ multiply, divide square and find square root</p>
     </table>
 
 
-            <details class="mkdocstrings-source">
+            <details class="quote">
               <summary>Source code in <code>src/calculator/calculator.py</code></summary>
               <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">127</span>
 <span class="normal">128</span>
@@ -1215,11 +1211,11 @@ multiply, divide square and find square root</p>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Returns square root of provided numeric value</span>
 
-<span class="sd">    Parameters:</span>
-<span class="sd">        a (float): The number to find square root of</span>
+<span class="sd">    Args:</span>
+<span class="sd">        a (float, optional): The number to find square root of. If None, uses the current memory.</span>
 
 <span class="sd">    Returns:</span>
-<span class="sd">        square_root (float): The square root of the provided number</span>
+<span class="sd">        float: The square root result.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="k">try</span><span class="p">:</span>
@@ -1270,7 +1266,7 @@ multiply, divide square and find square root</p>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>The number to be squared</p>
+                <p>The number to be squared. If None, uses the current memory.</p>
               </div>
             </td>
             <td>
@@ -1285,18 +1281,17 @@ multiply, divide square and find square root</p>
     <table>
       <thead>
         <tr>
-<th>Name</th>          <th>Type</th>
+          <th>Type</th>
           <th>Description</th>
         </tr>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-<td><code>square</code></td>            <td>
-                  <code><span title="float">float</span></code>
+            <td>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>The square of the provided number</p>
+                <p>float): The square result.</p>
               </div>
             </td>
           </tr>
@@ -1304,7 +1299,7 @@ multiply, divide square and find square root</p>
     </table>
 
 
-            <details class="mkdocstrings-source">
+            <details class="quote">
               <summary>Source code in <code>src/calculator/calculator.py</code></summary>
               <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">107</span>
 <span class="normal">108</span>
@@ -1328,11 +1323,11 @@ multiply, divide square and find square root</p>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Returns square of provided numeric value</span>
 
-<span class="sd">    Parameters:</span>
-<span class="sd">        a (float): The number to be squared</span>
+<span class="sd">    Args:</span>
+<span class="sd">        a (float, optional): The number to be squared. If None, uses the current memory.</span>
 
 <span class="sd">    Returns:</span>
-<span class="sd">        square (float): The square of the provided number</span>
+<span class="sd">        float): The square result.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="k">try</span><span class="p">:</span>
@@ -1360,7 +1355,7 @@ multiply, divide square and find square root</p>
 
     <div class="doc doc-contents ">
 
-        <p>Returns subtraction result of two numeric</p>
+        <p>Returns subtraction result of two numeric values.</p>
 
 
 <p><span class="doc-section-title">Parameters:</span></p>
@@ -1399,7 +1394,7 @@ multiply, divide square and find square root</p>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>The number to subtract</p>
+                <p>The number to subtract. If None, uses the current memory.</p>
               </div>
             </td>
             <td>
@@ -1414,18 +1409,17 @@ multiply, divide square and find square root</p>
     <table>
       <thead>
         <tr>
-<th>Name</th>          <th>Type</th>
+          <th>Type</th>
           <th>Description</th>
         </tr>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-<td><code>subtraction</code></td>            <td>
-                  <code><span title="float">float</span></code>
+            <td>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>The subtraction of the provided numbers</p>
+                <p>float): The subtraction result.</p>
               </div>
             </td>
           </tr>
@@ -1433,7 +1427,7 @@ multiply, divide square and find square root</p>
     </table>
 
 
-            <details class="mkdocstrings-source">
+            <details class="quote">
               <summary>Source code in <code>src/calculator/calculator.py</code></summary>
               <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">40</span>
 <span class="normal">41</span>
@@ -1457,14 +1451,14 @@ multiply, divide square and find square root</p>
 <span class="normal">59</span>
 <span class="normal">60</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">subtract</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Returns subtraction result of two numeric</span>
+<span class="sd">    Returns subtraction result of two numeric values.</span>
 
-<span class="sd">    Parameters:</span>
+<span class="sd">    Args:</span>
 <span class="sd">        a (float): The number to subtract from</span>
-<span class="sd">        b (float): The number to subtract</span>
+<span class="sd">        b (float): The number to subtract. If None, uses the current memory.</span>
 
 <span class="sd">    Returns:</span>
-<span class="sd">        subtraction (float): The subtraction of the provided numbers</span>
+<span class="sd">        float): The subtraction result.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="k">try</span><span class="p">:</span>
@@ -1516,7 +1510,7 @@ multiply, divide square and find square root</p>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>The number to add to</p>
+                <p>The first number</p>
               </div>
             </td>
             <td>
@@ -1532,7 +1526,7 @@ multiply, divide square and find square root</p>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>The number to be added</p>
+                <p>The second number. If None, uses the current memory.</p>
               </div>
             </td>
             <td>
@@ -1553,8 +1547,7 @@ multiply, divide square and find square root</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-<td><code>sum</code></td>            <td>
-                  <code><span title="float">float</span></code>
+<td><code>float</code></td>            <td>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1566,7 +1559,7 @@ multiply, divide square and find square root</p>
     </table>
 
 
-            <details class="mkdocstrings-source">
+            <details class="quote">
               <summary>Source code in <code>src/calculator/calculator.py</code></summary>
               <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">19</span>
 <span class="normal">20</span>
@@ -1591,12 +1584,12 @@ multiply, divide square and find square root</p>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Returns sum of two numeric values</span>
 
-<span class="sd">    Parameters:</span>
-<span class="sd">        a (float): The number to add to</span>
-<span class="sd">        b (float): The number to be added</span>
+<span class="sd">    Args:</span>
+<span class="sd">        a (float): The first number</span>
+<span class="sd">        b (float): The second number. If None, uses the current memory.</span>
 
 <span class="sd">    Returns:</span>
-<span class="sd">        sum (float): The sum of the provided numbers</span>
+<span class="sd">        float: The sum of the provided numbers</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="k">try</span><span class="p">:</span>
