@@ -80,4 +80,3 @@ def test_sqrt():
 
     calc3 = Calculator()
     assert calc3.sqrt("a") == 'Invalid input'
-    
