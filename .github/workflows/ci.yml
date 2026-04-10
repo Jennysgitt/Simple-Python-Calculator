@@ -1,8 +1,6 @@
 name: CI
 
-on:
-  push:
-  pull_request:
+on: [push, pull_request]
 
 jobs:
   build:
@@ -10,27 +8,27 @@ jobs:
 
     strategy:
       matrix:
-        python-version: [3.9, 3.10, 3.11]
+        python-version: ["3.9", "3.10", "3.11"]
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
 
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install pytest flake8
+          pip install pytest flake8 coverage
           pip install -e .
 
       - name: Lint code
-        run: |
-          flake8 .
+        # Only scan the src and tests directories, ignore venv or hidden folders
+        run: flake8 src/ tests/ 
 
-      - name: Run tests
+      - name: Test and Run Coverage
+        # This runs pytest through coverage to check how much code is tested
         run: |
-          pytest
+          coverage run -m pytest tests/
+          coverage report -m
