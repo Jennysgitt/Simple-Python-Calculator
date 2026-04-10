@@ -1,5 +1,7 @@
-# Calculator
-A simple python calculator
+# Simple Python Calculator
+
+[![CI](https://github.com/Jennysgitt/Simple-Python-Calculator/actions/workflows/ci.yml/badge.svg)](https://github.com/Jennysgitt/Simple-Python-Calculator/actions/workflows/ci.yml)
+
 Calculator currently supports:
   - Addition, subtraction, division and multiplication
   - Square and square root
