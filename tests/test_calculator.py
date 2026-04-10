@@ -1,6 +1,6 @@
 # import pytest
 
-from calculator import Calculator # noqa: F401
+from calculator import Calculator   # noqa: F401
 
 c = Calculator()
 
