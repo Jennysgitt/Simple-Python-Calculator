@@ -2,32 +2,32 @@ import math
 
 
 class Calculator:
-
-    """Calculator class with methods to sum, subtract,
-    multiply, divide square and find square root"""
+    """
+    Calculator class with methods to sum, subtract,
+    multiply, divide square and find square root.
+    """
 
     def __init__(self, memory=0):
         self.memory = memory
 
     def reset_memory(self):
         """
-        Resets the memory back to zero
+        Resets the memory back to zero.
         """
-
         self.memory = 0
 
     def sum(self, a, b=None):
         """
-        Returns sum of two numeric values
+        Returns sum of two numeric values.
 
         Args:
-            a (float): The first number
-            b (float): The second number. If None, uses the current memory.
+            a (float): The first number.
+            b (float): The second number. If None, uses
+                the current memory.
 
         Returns:
-            float: The sum of the provided numbers
+            float: The sum of the provided numbers.
         """
-
         try:
             if b is None:
                 b = self.memory
@@ -42,13 +42,13 @@ class Calculator:
         Returns subtraction result of two numeric values.
 
         Args:
-            a (float): The number to subtract from
-            b (float): The number to subtract. If None, uses the current memory.
+            a (float): The number to subtract from.
+            b (float): The number to subtract. If None,
+                uses the current memory.
 
         Returns:
-            float): The subtraction result.
+            float: The subtraction result.
         """
-
         try:
             if b is None:
                 b = a
@@ -61,16 +61,16 @@ class Calculator:
 
     def multiply(self, a, b=None):
         """
-        Returns multiplication result of two numeric values
+        Returns multiplication result of two numeric values.
 
-        Parameters:
+        Args:
             a (float): The first factor.
-            b (float): The second factor. If None, uses the current memory.
+            b (float): The second factor. If None,
+                uses the current memory.
 
         Returns:
             float: The product of the numbers.
         """
-
         try:
             if b is None:
                 b = self.memory
@@ -82,16 +82,16 @@ class Calculator:
 
     def divide(self, a, b=None):
         """
-        Returns division result of two numeric values
+        Returns division result of two numeric values.
 
         Args:
             a (float): The dividend.
-            b (float): The divisor. If None, uses the current memory.
+            b (float): The divisor. If None,
+                uses the current memory.
 
         Returns:
-            float): The quotient
+            float: The quotient.
         """
-
         try:
             if b is None:
                 b = a
@@ -106,15 +106,15 @@ class Calculator:
 
     def square(self, a=None):
         """
-        Returns square of provided numeric value
+        Returns square of provided numeric value.
 
         Args:
-            a (float, optional): The number to be squared. If None, uses the current memory.
+            a (float, optional): The number to be squared.
+                If None, uses the current memory.
 
         Returns:
-            float): The square result.
+            float: The square result.
         """
-
         try:
             if a is None:
                 a = self.memory
@@ -126,15 +126,15 @@ class Calculator:
 
     def sqrt(self, a=None):
         """
-        Returns square root of provided numeric value
+        Returns square root of provided numeric value.
 
         Args:
-            a (float, optional): The number to find square root of. If None, uses the current memory.
+            a (float, optional): The number to find square
+                root of. If None, uses the current memory.
 
         Returns:
             float: The square root result.
         """
-
         try:
             if a is None:
                 a = self.memory
