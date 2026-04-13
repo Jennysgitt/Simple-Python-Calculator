@@ -12,9 +12,11 @@ venv/
 .venv/
 env/
 .env/
+test-env/
+test-env*/
 
 # Testing and Coverage
-.tests/
+tests/
 .pytest_cache/
 .coverage
 htmlcov/
@@ -29,3 +31,6 @@ dist/
 # OS generated files
 .DS_Store
 Thumbs.db
+
+# Logs
+*.log

@@ -1,9 +1,13 @@
 [project]
-name = "simple-calculator"
+name = "simple-calculator-groupthree"
 version = "0.1.0"
 description = "A simple Python calculator"
-authors = [{name = "Your Name"}]
+authors = [{name = "Adaure", email = "aduray49@gmail.com"}]
+readme = "README.md"
+requires-python = ">=3.9"
 dependencies = []
+keywords = ["calculator", "python", "math"]
+license = { text = "MIT" }
 
 [build-system]
 requires = ["setuptools>=61.0"]
